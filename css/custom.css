@@ -1,3 +1,35 @@
-h1 {
-  color: red;
+.mt-150 {
+  margin-top: 150px;
+}
+
+.gradient {
+  border-top: 10px solid #00cc6a;
+  border-bottom: 10px solid #fff52a;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+  background-size: 10px 100%;
+  background-image: linear-gradient(to bottom, #00cc6a 0%, #1cdadc 33%, #fc2ff3 66%, #fff52a 100%), linear-gradient(to bottom, #00cc6a 0%, #1cdadc 33%, #fc2ff3 66%, #fff52a 100%);
+}
+
+.gradient .logo {
+  margin-top: -180px;
+  margin-left: -20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .gradient .logo {
+    margin-top: -140px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .gradient .logo {
+    margin-top: -80px;
+  }
+}
+
+.gradient .logo2 {
+  margin-top: -90px;
 }

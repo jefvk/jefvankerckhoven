@@ -1,5 +1,35 @@
-$rood: red;
+$groen: rgb(0,204,106);
 
-h1{
-  color: $rood;
+// algemene classes
+.mt-150{
+  margin-top: 150px;
+}
+
+.gradient {
+  border-top: 10px solid $groen;
+  border-bottom: 10px solid rgb(255,245,42);
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+  background-size: 10px 100%;
+  background-image: linear-gradient(to bottom, $groen 0%, rgb(28,218,220) 33%, rgb(252,47,243) 66%, rgb(255,245,42) 100%), linear-gradient(to bottom, $groen 0%, rgb(28,218,220) 33%, rgb(252,47,243) 66%, rgb(255,245,42) 100%);
+
+      .logo{
+        margin-top: -180px;
+        margin-left: -20px;
+      }
+      @media only screen and (max-width: 1200px){
+        .logo{
+          margin-top: -140px;
+        }
+      }
+      @media only screen and (max-width: 991px){
+        .logo{
+          margin-top: -80px;
+        }
+      }
+      .logo2{
+        margin-top: -90px;
+      }
 }
